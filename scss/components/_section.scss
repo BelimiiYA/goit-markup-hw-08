@@ -1,0 +1,21 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section--no-padding {
+  @media screen and (max-width: $desktop) {
+    display: none;
+    padding-top: 0;
+  }
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}

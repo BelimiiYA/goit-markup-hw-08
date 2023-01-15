@@ -1,0 +1,128 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  color: var(--hover-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-right: 93px;
+  @media screen and (max-width: $mobile) {
+    margin-right: 0;
+  }
+}
+
+.header__logo {
+  color: var(--secondary-color);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: $mobile) {
+    justify-content: space-between;
+  }
+}
+.header-nav__content {
+  display: contents;
+}
+.site-nav {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+.site-contacts {
+  display: none;
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 50px;
+  }
+}
+
+.site-nav__link {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav__link--current {
+  position: relative;
+  color: var(--hover-color);
+}
+
+.site-nav__link--current::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: "";
+  height: 4px;
+  width: 100%;
+  background-color: var(--hover-color);
+  border-radius: 2px;
+}
+
+.site-contacts__link {
+  color: var(--brand-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  height: 16px;
+  fill: var(--brand-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    padding-top: 21px;
+    padding-bottom: 10px;
+  }
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus,
+.site-contacts__link:hover,
+.site-contacts__link:focus {
+  color: var(--hover-color);
+  fill: var(--hover-color);
+}
+
+.site-contacts__icon {
+  margin-right: 10px;
+}

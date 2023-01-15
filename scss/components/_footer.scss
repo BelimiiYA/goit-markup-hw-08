@@ -1,0 +1,74 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__address-box {
+  display: block;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+    margin-right: 70px;
+  }
+}
+.footer__logo--primary{
+  color: var(--hover-color);
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.footer__logo {
+  color: var(--primary-white-color);
+}
+
+.social-links__link--bg-grey {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
+}
+
+.social-footer {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-left: 0;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+
+.social-footer__call {
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
+  @media screen and (max-width: $mobile) {
+    text-align: center;
+  }
+}

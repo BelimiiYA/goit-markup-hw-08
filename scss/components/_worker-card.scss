@@ -1,0 +1,32 @@
+.worker__photo {
+    display: block;
+    @media screen and (min-width: $mobile) {
+            width: 100%;
+        }
+}
+
+.worker__meta {
+    background-color: var(--primary-white-color);
+    padding: 30px 0px;
+    @media screen and (min-width: $mobile) {
+            width: 100%;
+        }
+}
+
+.worker__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.worker__text {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 18px;
+}

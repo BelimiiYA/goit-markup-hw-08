@@ -1,0 +1,45 @@
+.address-list__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  transition-property: fill, color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-list__link:hover,
+.address-list__link:focus {
+  color: var(--hover-color);
+}
+
+.address-list__link--white {
+  color: var(--primary-white-color);
+}
+
+.address {
+  display: flex;
+  
+    @media screen and (min-width: $mobile) {
+      margin-bottom: 60px;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    @media screen and (min-width: $desktop) {
+      align-items: baseline;
+      margin-bottom: 0;
+    }
+  }
+
+.address-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address-list {
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 60px;
+  }
+}
