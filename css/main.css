@@ -557,10 +557,6 @@ summary {
   }
 }
 
-.menu-button__icon-burger {
-  fill: #000000;
-}
-
 .projects__item:hover .card__overlay {
   -webkit-transform: translateY(-293px);
           transform: translateY(-293px);
@@ -1740,8 +1736,6 @@ summary {
 }
 
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1762,6 +1756,15 @@ summary {
   .menu-toggle {
     display: none;
   }
+}
+
+.button-mobile {
+  color: #000000;
+}
+
+.button-mobile:hover,
+.button-mobile:focus {
+  color: var(--hover-color);
 }
 
 .menu-container {

@@ -23,8 +23,6 @@
 }
 
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,9 +33,7 @@
   border: none;
   border-radius: 50%;
   outline: none;
-  color: #000000;
-  background-color: #fff;
-  
+    
 @media (min-width: $tablet) {
       display: none;
   }
