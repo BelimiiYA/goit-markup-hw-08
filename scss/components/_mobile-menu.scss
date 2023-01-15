@@ -42,8 +42,11 @@
       display: none;
   }
 }
-.menu-toggle:hover,
-.menu-toggle:focus{
+.button-mobile{
+  color:#000000;
+}
+.button-mobile:hover,
+.button-mobile:focus{
   color: var(--hover-color);
 }
 .menu-container {

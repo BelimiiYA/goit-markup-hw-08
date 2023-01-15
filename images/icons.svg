@@ -79,7 +79,7 @@
     <symbol id="icon-send" viewBox="0 0 31 32">
       <path d="M30.72 0.051l-30.72 17.28 9.818 3.635 15.142-14.195-11.52 15.539v8.448l5.504-6.413 6.976 2.586 4.8-26.88z"></path>
     </symbol>
-    <symbol id="icon-menu_burger" viewBox="0 0 48 32">
+    <symbol id="icon-menu" viewBox="0 0 48 32">
       <path d="M0 5.34v-5.34h48v5.34h-48zM0 18.66h48v-5.32h-48v5.32zM0 32h48v-5.34h-48v5.34z"></path>
     </symbol>
     <symbol id="icon-line" viewBox="0 0 1 32">
