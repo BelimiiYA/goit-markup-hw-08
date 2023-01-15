@@ -35,10 +35,16 @@
   border: none;
   border-radius: 50%;
   outline: none;
+  color: #000000;
+  background-color: #fff;
   
 @media (min-width: $tablet) {
       display: none;
   }
+}
+.menu-toggle:hover,
+.menu-toggle:focus{
+  color: var(--hover-color);
 }
 .menu-container {
   position: fixed;
