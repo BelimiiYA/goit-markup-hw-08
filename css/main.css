@@ -560,7 +560,7 @@ summary {
 }
 
 .menu-button__icon-burger {
-  fill: #000000;
+  color: #000000;
 }
 
 .projects__item:hover .card__overlay {
@@ -1182,7 +1182,7 @@ summary {
 
 .form__field {
   position: relative;
-  width: 448px;
+  max-width: 448px;
 }
 
 .form__label {
@@ -1495,8 +1495,8 @@ summary {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
-  min-height: 521px;
+  max-width: 528px;
+  max-height: 521px;
   padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
