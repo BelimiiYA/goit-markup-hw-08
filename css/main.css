@@ -557,6 +557,10 @@ summary {
   }
 }
 
+.menu-button__icon-burger {
+  fill: #000000;
+}
+
 .projects__item:hover .card__overlay {
   -webkit-transform: translateY(-293px);
           transform: translateY(-293px);
@@ -1749,12 +1753,10 @@ summary {
           justify-content: center;
   margin-left: auto;
   padding: 0;
-  background-color: transparent;
   cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
-  color: #000000;
 }
 @media (min-width: 768px) {
   .menu-toggle {
@@ -1797,7 +1799,6 @@ summary {
   position: absolute;
   top: 16px;
   right: 16px;
-  background-color: #fff;
 }
 
 .mobile-menu {
