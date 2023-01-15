@@ -521,8 +521,6 @@ summary {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 6px;
-  background-color: #ffffff;
-  fill: #212121;
   cursor: pointer;
 }
 
@@ -1756,13 +1754,14 @@ summary {
   border: none;
   border-radius: 50%;
   outline: none;
+  color: #000000;
 }
-
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 }
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -1771,7 +1770,7 @@ summary {
   height: 100vh;
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 20px;
+  padding-left: 0px;
   background-color: var(--primary-white-color);
   z-index: 999;
   display: -webkit-box;
