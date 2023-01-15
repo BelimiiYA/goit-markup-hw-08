@@ -12,13 +12,13 @@
     margin-right: 70px;
   }
 }
-.footer__logo--primary{
+.footer__logo--primary {
   color: var(--hover-color);
-    font-family: Raleway, sans-serif;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .footer__logo {
   color: var(--primary-white-color);
@@ -40,6 +40,7 @@
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
+    align-items: baseline;
   }
 }
 

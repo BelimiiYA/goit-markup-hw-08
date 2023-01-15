@@ -1,7 +1,6 @@
 .subscription-form {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 
   @media screen and (max-width: 1199px) {
     align-items: center;
@@ -11,54 +10,46 @@
 
 .subscription-form__call {
   color: var(--primary-white-color);
-  margin: 0;
-  margin-bottom: 20px;
-  font-weight: 700;
+  padding-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  @media screen and(max-width:1199px) {
-    margin-top: 60px;
-  }
+}
 
-  @media screen and(min-width:$desktop) {
-    padding-top: 12px;
+.subcribtion-form__input {
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
-.subscription-form__input {
-  height: 50px;
+.subscription-form__mail {
+  width: 300px;
+  height: 100%;
+  padding: 15px 16px;
+  margin-bottom: 20px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background-color: #2f303a;
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  text-decoration: #fff;
 
-  @media screen and(max-width:1199px) {
-    margin-bottom: 20px;
+  &:focus {
+    color: #fff;
   }
 
-  @media screen and(min-width:$desktop) {
-    margin-right: 10px;
-  }
-
-  @media screen and (min-width: 370px) {
-    width: 358px;
-  }
-
-  @media screen and (min-width: $mobile) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 358px;
+  &::placeholder {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
   }
 }
+
 .subscribtion-form__other {
   justify-content: center;
   align-items: center;

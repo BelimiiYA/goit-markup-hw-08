@@ -29,7 +29,7 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg class="button-mobile" width="40" height="40">
+          <svg class="button-mobile" width="24" height="16">
             <use
               class="menu-button__icon-burger"
               href="/images/icons.svg#icon-menu_burger"
@@ -434,7 +434,7 @@
       </section>
 
       <!--Постійні клієнти-->
-      <section class="section">
+      <section class="customers-section">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
 
@@ -492,7 +492,7 @@
     </main>
     <!--підвал-->
     <footer class="footer">
-      <div class="container flex-container">
+      <div class="container">
         <div class="flex-container">
           <div class="footer__address-box">
             <a class="footer__logo--primary" lang="en" href="./index.html"
@@ -573,24 +573,26 @@
             </div>
           </div>
 
-          <form class="subscription-form">
-            <p class="subscription-form__call">Підпишіться на розсилку</p>
-            <input
-              class="subscription-form__input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
-            <button
-              class="main-button subscription-form__main-button"
-              type="submit"
-            >
-              Підписатися
-              <svg class="subscription-form__icon">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
+          <div class="subscription-form">
+            <h2 class="subscription-form__call">Підпишіться на розсилку</h2>
+            <div class="subcribtion-form__input">
+              <input
+                class="subscription-form__mail"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <button
+                class="main-button subscription-form__main-button"
+                type="submit"
+              >
+                Підписатися
+                <svg class="subscription-form__icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

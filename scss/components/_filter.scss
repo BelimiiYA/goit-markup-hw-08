@@ -1,6 +1,5 @@
 .filter {
   @media screen and (max-width: 1199px) {
-    padding-bottom: 30px;
     padding-top: 60px;
   }
 
@@ -16,6 +15,7 @@
   &__list {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 
     @media screen and (max-width: 767px) {
       justify-content: flex-start;
