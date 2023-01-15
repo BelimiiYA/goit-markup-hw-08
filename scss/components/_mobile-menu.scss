@@ -50,9 +50,9 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
   background-color: var(--primary-white-color);
   z-index: 999;
   display: flex;
@@ -127,6 +127,10 @@
     font-size: 18px;
     line-height: 1.23;
   }
+}
+.button-mobile{
+  color: #000000;
+  background-color: #fff;
 }
 .button-mobile:hover,
 .button-mobile:focus {
