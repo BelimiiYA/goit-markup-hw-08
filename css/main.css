@@ -682,7 +682,7 @@ summary {
   margin-bottom: 30px;
   margin-left: 20px;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 768px) {
   .checkbox__label {
     display: block;
   }
@@ -1491,7 +1491,7 @@ summary {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  max-width: 528px;
+  max-width: auto;
   padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
