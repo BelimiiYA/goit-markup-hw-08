@@ -23,31 +23,25 @@
 }
 
 .menu-toggle {
-  position: absolute;
-
-  right: 16px;
+  min-height: 40px;
+  min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  margin: 0;
+  margin-left: auto;
   padding: 0;
-  background-color: #fff;
+  background-color: transparent;
   cursor: pointer;
-  transition: fill 250s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  border-radius: 50%;
+  outline: none;
 
-  &:hover,
-  &:focus {
-    fill: var(--hover-color);
-  }
 
-  @media screen and (min-width: $tablet) {
+@media (min-width: $tablet) {
+  
     display: none;
   }
-}
-
-.button-menu {
-  color: #000000;
 }
 
 .menu-container {
@@ -56,15 +50,26 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 0px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
   background-color: var(--primary-white-color);
   z-index: 999;
   display: flex;
   flex-direction: column;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
 }
 
 .mobile-menu {
@@ -123,10 +128,7 @@
     line-height: 1.23;
   }
 }
-.button-mobile {
-  color: #000000;
-  background-color: #fff;
-}
+
 .button-mobile:hover,
 .button-mobile:focus {
   color: var(--hover-color);
