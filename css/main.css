@@ -533,7 +533,6 @@ summary {
 
 .button-menu {
   position: absolute;
-  top: 8px;
   right: 8px;
   cursor: pointer;
 }
@@ -1743,6 +1742,8 @@ summary {
 }
 
 .menu-toggle {
+  position: absolute;
+  right: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1752,26 +1753,24 @@ summary {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: auto;
+  margin: 0;
   padding: 0;
+  background-color: #fff;
   cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  outline: none;
+  -webkit-transition: fill 250s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250s cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media (min-width: 768px) {
+.menu-toggle:hover, .menu-toggle:focus {
+  fill: var(--hover-color);
+}
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 }
 
-.button-mobile {
+.button-menu {
   color: #000000;
-}
-
-.button-mobile:hover,
-.button-mobile:focus {
-  color: var(--hover-color);
 }
 
 .menu-container {
@@ -1798,17 +1797,6 @@ summary {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-}
-
-.menu-container.is-open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
 }
 
 .mobile-menu {
