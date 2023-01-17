@@ -11,6 +11,9 @@
   flex-wrap: wrap;
   margin-top: -1 * 30px;
   margin-left: -1 * 30px;
+  @media screen and (min-width: $desktop) {
+    margin-right: -56px;
+  }
 }
 
 .clients-list__link {

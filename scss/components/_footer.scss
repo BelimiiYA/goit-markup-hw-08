@@ -7,6 +7,10 @@
   display: block;
   text-align: center;
 
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-left: 76px;
+  }
+
   @media screen and (min-width: $desktop) {
     text-align: start;
     margin-right: 70px;
@@ -48,7 +52,8 @@
   display: flex;
   justify-content: space-between;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-right: 89px;
     margin-bottom: 0;
   }
   @media screen and (max-width: $mobile) {
@@ -66,6 +71,9 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    text-align: center;
+  }
   @media screen and (min-width: $desktop) {
     text-align: start;
   }

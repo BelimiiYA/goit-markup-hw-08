@@ -407,6 +407,11 @@ summary {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address-list {
+    margin-top: 20px;
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -681,8 +686,9 @@ summary {
   letter-spacing: 0.03em;
   margin-bottom: 30px;
   margin-left: 20px;
+  cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 479px) {
   .checkbox__label {
     display: block;
   }
@@ -717,6 +723,11 @@ summary {
       flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    margin-right: -56px;
+  }
 }
 
 .clients-list__link {
@@ -952,6 +963,11 @@ summary {
   display: block;
   text-align: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__address-box {
+    margin-left: 76px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__address-box {
     text-align: start;
@@ -1016,8 +1032,9 @@ summary {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .social-footer {
+    margin-right: 89px;
     margin-bottom: 0;
   }
 }
@@ -1039,6 +1056,11 @@ summary {
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-footer__call {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .social-footer__call {
@@ -1142,6 +1164,11 @@ summary {
   letter-spacing: 0.03em;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscription-form__mail {
+    width: 450px;
+  }
 }
 
 .subscribtion-form__other {
@@ -1453,15 +1480,52 @@ summary {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
+  background-color: #c4c4c4;
+  padding: 118px 0px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #2f303a;
+  max-width: 480px;
+  height: auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/team-work-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team-work-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/team-work-mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team-work-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/team-work-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team-work-tablet.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/team-work-tablet@2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team-work-tablet@2.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0px;
+    max-width: 1600px;
+    height: 600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/team-work-desktop.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team-work-desktop.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/team-work-desktop@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team-work-desktop@2x.jpg);
+  }
 }
 
 .hero__title {
@@ -1489,24 +1553,21 @@ summary {
   position: absolute;
   top: 50%;
   left: 50%;
+  max-width: 528px;
+  width: 100%;
+  min-height: 521px;
+  padding: 40px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  max-width: auto;
-  padding: 40px;
-  background-color: #ffffff;
+  overflow: auto;
+  background-color: var(--primary-white-color);
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  overflow: auto;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 1200px) {
-  .modal {
-    max-width: 700px;
-  }
 }
 
 .modal__title {
