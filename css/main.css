@@ -690,7 +690,8 @@ summary {
 }
 @media screen and (max-width: 479px) {
   .checkbox__label {
-    display: block;
+    display: -webkit-box;
+    margin-left: -25px;
   }
 }
 
@@ -727,6 +728,11 @@ summary {
 @media screen and (min-width: 1200px) {
   .clients-list {
     margin-right: -56px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-list {
+    margin-left: 10px;
   }
 }
 

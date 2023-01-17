@@ -32,7 +32,8 @@
   margin-left: 20px;
   cursor: pointer;
   @media screen and (max-width: 479px) {
-    display: block;
+    display: -webkit-box;
+    margin-left: -25px;
   }
 }
 
