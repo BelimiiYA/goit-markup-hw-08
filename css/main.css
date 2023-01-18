@@ -688,6 +688,9 @@ summary {
   .checkbox__label {
     display: inline;
     letter-spacing: -0.1em;
+    margin-left: -5px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 @media screen and (min-width: 768px) {
