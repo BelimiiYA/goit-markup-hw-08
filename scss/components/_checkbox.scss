@@ -33,7 +33,7 @@
   cursor: pointer;
   @media screen and (max-width: 479px) {
     display: -webkit-box;
-    margin-left: -25px;
+    max-width: 370px;
   }
 }
 

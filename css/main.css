@@ -691,7 +691,7 @@ summary {
 @media screen and (max-width: 479px) {
   .checkbox__label {
     display: -webkit-box;
-    margin-left: -25px;
+    max-width: 370px;
   }
 }
 
