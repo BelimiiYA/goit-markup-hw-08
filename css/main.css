@@ -687,7 +687,7 @@ summary {
 @media screen and (max-width: 479px) {
   .checkbox__label {
     display: block;
-    margin-left: -25px;
+    width: auto;
   }
 }
 
@@ -944,7 +944,7 @@ summary {
 
 .filter__item {
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 6px;
 }
 @media screen and (max-width: 767px) {
   .filter__item:nth-child(-n+3) {
