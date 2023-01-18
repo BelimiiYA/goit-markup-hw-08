@@ -34,7 +34,7 @@
   @media screen and (max-width: 479px) {
     display: block;
     margin-left: -30px;
-    justify-content: center;
+    flex-wrap: nowrap;
   }
   @media screen and (min-width: $tablet) {
     justify-content: center;

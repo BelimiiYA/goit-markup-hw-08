@@ -688,9 +688,8 @@ summary {
   .checkbox__label {
     display: block;
     margin-left: -30px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 @media screen and (min-width: 768px) {
